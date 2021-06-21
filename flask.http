@@ -1,0 +1,44 @@
+POST http://localhost:5000/signup
+Content-Type: application/json
+
+{
+    "name": "tenanta",
+    "database": "postgres",
+    "configdata": [
+    {
+      "title": "Feedback Survey Form",
+      "questions": [
+        {"id": 1,
+        "text": "What is your email?"
+      },
+        {"id": 2,
+        "text": "Who did you work with?"
+      },
+        {"id": 3,
+        "text": "How was the service?"
+      }
+    ],
+     "styling": {
+        "buttonColor" : "green",
+        "buttonText" : "submit",
+        "fontFamilyHeader" : "sans-serif",
+        "fontFamilyQuestions" : "Ariel",
+        "headingColor" : "green"
+      }
+    }
+    ]
+}
+
+
+###
+GET http://localhost:5000/tenant
+
+
+
+###
+
+GET http://localhost:5000/tenantb/surveys
+
+
+###
+GET http://localhost:5000/hello
